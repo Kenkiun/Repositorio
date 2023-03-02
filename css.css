@@ -1,0 +1,52 @@
+:root{
+    --body-fonts:monospace;
+    --headings:monospace
+}
+
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+ font-family: var(--body-fonts);
+ margin: 0;
+}
+
+ul,ol{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    font-family: var(--headings);
+    font-weight: 700;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.image{
+    width: 100px;
+    margin: auto ;
+}
+
+
+/* clases reutilizables */
+
+.container{
+    max-width: 1024px;
+    padding: 0 1rem;
+}
