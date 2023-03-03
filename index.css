@@ -35,7 +35,6 @@ h1,h2,h3{
 
 img{
     max-width: 100%;
-
 }
 
 .image{
@@ -139,7 +138,7 @@ img{
 }
 
 .blog{
-    padding: 40px 0
+    padding: 50px 0
 }
 
 .blog__title{
@@ -147,7 +146,7 @@ img{
 }
 
 .blog__article{
-    /* border: 3px solid red; */
+    
 }
 
 .blog__info{
@@ -163,9 +162,10 @@ img{
     font-weight: 700;
     font-size: 17px;
     text-align: center;
+    display: block;
+    width: 100%;
     padding: .75rem 1.5rem;
     border-radius: 8px;
-    display: block;
     margin-top: 1.5rem;
     background-color: rgba(229, 168, 98, 0.274);
 }
@@ -176,8 +176,6 @@ img{
     gap: 3rem;
 }
 
-/* vp-width
-vp-height */
 .parallax__image{
     position: relative;
     width: 100%;
@@ -192,11 +190,93 @@ vp-height */
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: crimson;
+    color: white;
 }
-    
 
+/* adoption */
+.adoption{
+    padding: 50px 0;
+    text-align: center;
+}
 
+.adoption__title{
+    font-size: 2.5rem;
+}
 
+/* footer */
+.footer{
+    padding-bottom: 50px
+}
 
-/* :nth-child(1)  */
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem
+}
+
+.footer .logo__text, .footer .nav__link{
+    color: black;
+}
+
+@media (min-width: 768px){
+
+    .header .container {
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .nav__link{
+        font-size: 1.25rem;
+    }
+
+    .hero .container{
+        height: 600px;
+    }
+
+    .blog__articles .blog__article:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .blog__article{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 2rem
+    }
+
+    .blog__image{
+        width: 50%;
+        height: 400px;
+        
+    }
+    .blog__image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .blog__info{
+        width: 50%;
+    }
+
+    .blog__link{
+        width: max-content;
+    }
+
+    .hero__title{
+        font-size: 3rem;
+    }
+
+    .hero__description{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        margin: auto;
+    }
+}
